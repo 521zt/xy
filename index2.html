@@ -223,7 +223,7 @@
 <script type="text/javascript">
     $(function () {
         $('#yes').click(function (event) {
-            modal('我就知道小姐姐您一定会愿意的。(^_^)', function () {
+            modal('我就知道小姐姐你一定会愿意的。(^_^)', function () {
                 $('.page_one').addClass('hide');
                 $('.page_two').removeClass('hide');
                 // typeWrite();
@@ -245,7 +245,7 @@
     }
 
     function C() {
-        modal('请您不要拒绝我', D);
+        modal('请你不要拒绝我', D);
     }
 
     function D() {
@@ -265,7 +265,7 @@
     }
 
     function H() {
-        modal('我会做饭', I);
+        modal('我会做饭(在学了)', I);
     }
 
     function I() {
@@ -273,7 +273,7 @@
     }
 
     function J() {
-        modal('行，我们去民政局登记吧', function () {
+        modal('行，时间到了我们就去民政局登记吧', function () {
             fireworks();
         });
     }
@@ -311,7 +311,7 @@
     function typeWrite() {
         $('.type_words').html(myWords.substring(0, x++) + '_');
         var timer = setTimeout("typeWrite()", speed);
-        if (x == myWords.length) {
+        if (x === myWords.length) {
             x = myWords.length;
             clearTimeout(timer)
         }
