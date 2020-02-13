@@ -93,8 +93,8 @@
 
     var day = timer();
     setInterval(timer, 1000);
-    if (day >= 99 || day <=100) {
-        setTimeout(show,6000);
+    if (day === 100) {
+        setTimeout(show,8000);
     }
     function show() {
         var url = location.href.substring(0, location.href.lastIndexOf('/'));
